@@ -29,7 +29,8 @@ import resume from './resume';
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigation />}/>
+      <Route path="/" element={<Navigation resume={resume}/>}/>
+      <Route path="/home" element={<Homepage resume={resume}/>} />
     </Routes>
   );
 };
