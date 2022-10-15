@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Fragment, useContext } from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
 import './navigation-bar-component.css';
 const Navigation = ({ resume } ) => {
     console.log(resume);
@@ -41,12 +42,12 @@ const Navigation = ({ resume } ) => {
 
 
       </header> */}
-        <div className='menu__container'>
+        <nav className='menu__container'>
             <div className='menu'>
                 <Link to='/'>Main</Link>
                 <Link to='/home'>Home</Link>
             </div>
-        </div>
+        </nav>
         <Outlet></Outlet>
         </Fragment>
     )
