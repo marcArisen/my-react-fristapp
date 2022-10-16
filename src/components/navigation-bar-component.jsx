@@ -56,7 +56,7 @@ const Navigation = ({ resume } ) => {
             </ul>
          </nav>
 
-         <div className="row banner">
+         {/* <div className="row banner">
             <div className="banner-text">
                <h1 className="responsive-headline">I am {resume.name}.</h1>
                <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>I am a {resume.role}.{resume.roleDescription}
@@ -75,11 +75,12 @@ const Navigation = ({ resume } ) => {
                   }
                </ul>
             </div>
-         </div>
+         </div> */}
 
          <p className="scrolldown">
             <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
          </p>
+         <Outlet></Outlet>
 
       </header>
         </Fragment>
